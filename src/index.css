@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ─── */
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream-50 text-stone-800 antialiased;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-cream-400 rounded-full;
+  }
+}
+
+/* ─── Utilities ─── */
+@layer utilities {
+  .animate-shimmer {
+    background-size: 800px 100%;
+    animation: shimmer 1.8s infinite linear;
+  }
+
+  /* Prevent double-tap zoom on mobile buttons */
+  button, a {
+    touch-action: manipulation;
+  }
+
+  /* Better tap area on mobile */
+  .tap-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
