@@ -47,7 +47,7 @@ export default function Hero({ onUploadClick }) {
           className="mt-6 font-serif text-[1.1rem] leading-relaxed text-stone-600 font-light max-w-xs animate-fade-up opacity-0"
           style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}
         >
-          Comparte tus fotos y revive cada momento especial de este día único.
+          Cada foto es un pedacito de este día que queremos guardar para siempre
         </p>
 
         {/* CTAs */}
